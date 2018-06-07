@@ -23,6 +23,6 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
 
     @Override
     public SysUser selectByUsername(String username) {
-        return this.baseMapper.selectByUsername(username);
+        return super.baseMapper.selectByUsername(username);
     }
 }

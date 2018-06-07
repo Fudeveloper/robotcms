@@ -3,6 +3,7 @@ package com.lik.robotcms.mapper;
 import com.lik.robotcms.entity.SysUser;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Component;
 
 /**
  * <p>
@@ -12,7 +13,9 @@ import org.apache.ibatis.annotations.Param;
  * @author lik123
  * @since 2018-06-06
  */
+
+@Component
 public interface SysUserMapper extends BaseMapper<SysUser> {
 
-    SysUser selectByUsername(@Param("username")String username);
+    SysUser selectByUsername(@Param("username") String username);
 }

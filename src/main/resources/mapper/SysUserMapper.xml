@@ -30,4 +30,9 @@
         id, username, name, password, dept_id AS deptId, email, mobile, status, user_id_create AS userIdCreate, gmt_create AS gmtCreate, gmt_modified AS gmtModified, sex, birth, pic_id AS picId, live_address AS liveAddress, hobby, province, city, district
     </sql>
 
+    <select id="selectByUsername" resultType="com.lik.robotcms.entity.SysUser">
+        SELECT * from sys_user WHERE username=#{username}
+    </select>
+
+
 </mapper>
